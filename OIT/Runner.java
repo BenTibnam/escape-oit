@@ -39,7 +39,38 @@ public class Runner{
     }
     
     private static void die(String messge, ImageIcon img){
-    
+        Clip c = ff.prepareSound("sound.wav");
+        for(int i = 0; i < 100; i++) c.start();
+        
+        JFrame frame = FrontendFactory.makeNonTerminatingFrame("YOU DIEED!!!!111!!!111!!!!", WIDTH, HEIGHT);
+        JButton a = new JButton("DIE");
+        JButton b = new JButton("DIE");
+        JLabel story = new JLabel("<html>YOU DIED</html>");
+        JLabel image = new JLabel(new ImageIcon("picture.jpg"));
+        
+        frame.setLayout(null);
+        image.setBounds(0, 0, 480, 360);
+        a.setBounds(500, 10, 500, 50);
+        b.setBounds(500, 70, 500, 50);
+        story.setBounds(20, 150, 1000, 1000);
+        
+        a.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ae){
+                escape1();
+            }
+        });
+        
+        b.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ae){
+                
+            }
+        });
+        
+        frame.getContentPane().add(image);
+        frame.getContentPane().add(a);
+        frame.getContentPane().add(b);
+        frame.getContentPane().add(story);
+        frame.setVisible(true);
     }
     
     private static void createIntro(){
@@ -60,13 +91,48 @@ public class Runner{
         
         a.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent ae){
-                ;
+                escape1();
             }
         });
         
         b.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent ae){
-                ;
+                
+            }
+        });
+        
+        frame.getContentPane().add(image);
+        frame.getContentPane().add(a);
+        frame.getContentPane().add(b);
+        frame.getContentPane().add(story);
+        frame.setVisible(true);
+    }
+    
+    public static void escape1(){
+        Clip c = ff.prepareSound("sound.wav");
+        for(int i = 0; i < 100; i++) c.start();
+        
+        JFrame frame = FrontendFactory.makeNonTerminatingFrame("Cable tIed", WIDTH, HEIGHT);
+        JButton a = new JButton("A. yes");
+        JButton b = new JButton("B. no");
+        JLabel story = new JLabel("<html>owchie oof owie ooh ow it hurts! dso u actually keep wriggling</html>");
+        JLabel image = new JLabel(new ImageIcon("picture2.jpg"));
+        
+        frame.setLayout(null);
+        image.setBounds(0, 0, 480, 360);
+        a.setBounds(500, 10, 500, 50);
+        b.setBounds(500, 70, 500, 50);
+        story.setBounds(20, 150, 1000, 1000);
+        
+        a.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ae){
+                die("HE RJ 45 CUTs DEEEEEP INTo YOur JUGGULAR VEIN YOU blleed oUT FROM UR NECK AND dIE in teh OIT room AT AHS!!!!!!", new ImageIcon("picture5.jpg"));
+            }
+        });
+        
+        b.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent ae){
+                
             }
         });
         
