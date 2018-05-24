@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Adventure
+comment1.params=
+comment1.target=Adventure()
+comment2.params=ms
+comment2.target=void\ wait(int)
+comment3.params=imgDir\ title\ text
+comment3.target=javax.swing.JFrame\ popup(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment4.params=ae
+comment4.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment5.params=ae
+comment5.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment6.params=frame
+comment6.target=void\ closeJFrame(javax.swing.JFrame)
+comment7.params=mp3Dir
+comment7.target=void\ sound(java.lang.String)
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9

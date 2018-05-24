@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=StoryElement
+comment1.params=branch\ story
+comment1.target=StoryElement(int,\ java.lang.String)
+comment2.params=
+comment2.target=int\ getBranch()
+comment3.params=
+comment3.target=java.lang.String\ getStory()
+numComments=4

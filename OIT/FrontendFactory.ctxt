@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=FrontendFactory
+comment1.params=dir
+comment1.target=javax.sound.sampled.Clip\ prepareSound(java.lang.String)
+comment2.params=c
+comment2.target=void\ playSound(javax.sound.sampled.Clip)
+comment3.params=title\ w\ h
+comment3.target=javax.swing.JFrame\ makeFrame(java.lang.String,\ int,\ int)
+comment4.params=
+comment4.target=void\ windowClosing()
+comment5.params=title\ w\ h
+comment5.target=javax.swing.JFrame\ makeNonTerminatingFrame(java.lang.String,\ int,\ int)
+numComments=6
